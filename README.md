@@ -39,4 +39,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 # Link to deployed application
-[https://cjmoney1234.github.io/My-Assignments/]
+(https://cjmoney1234.github.io/my-first-portfolio/)
