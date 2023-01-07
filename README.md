@@ -32,8 +32,6 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-## Snapshot
-![Screenshot](../my-first-portfolio/assets/images/portfolio/Screenshot%202023-01-07%20122643.png)
 
 # Link to deployed application
 (https://cjmoney1234.github.io/my-first-portfolio/)
