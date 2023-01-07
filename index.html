@@ -6,25 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/portfolio/reset.css">
+    <link rel="stylesheet" href="./assets/css/portfolio/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
     <title> &#128187; Jeff Zulma Portfolio</title>
 </head>
 <!--Body of the HTML-->
 <body>
-    <!--Header-->
     <header>
-        <h1 class="author-name">Jeff Zulma</h1>
-        <nav class="header-links">
-            <a href="#about">About Me</a>
-            <a href="#projects">My Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#Resume">Resume</a>
-        </nav>
+    <nav class="relative w-full flex flex-wrap items-center justify-between py-4 text-gray-500 hover:text-gray-700 focus:text-gray-700 navbar navbar-expand-lg ">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+            <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </button>
+        <div class="collapse navbar-collapse flex-grow items-center shadow-2xl" id="navbarSupportedContent">
+            <!-- Left links -->
+            <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto header-links">
+                <li class="nav-item p-2">
+                    <a class="nav-link focus:text-gray-700 p-0" href="#about">About Me</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link focus:text-gray-700 p-0" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link focus:text-gray-700 p-0" href="./assets/resume.html">Resume</a>
+                </li>
+            </ul>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="dropdown relative">
+            <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./assets/images/portfolio/F5D58D7D-8035-4E0B-8A8B-21052E610A65.JPG" class="rounded-full" style="height: 8rem; width: 8rem" alt="" loading="lazy" />
+            </a>
+            <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-1 list-none text-left rounded-lg shadow-lg mt-1 hidden mt-10 bg-clip-padding border-none left-auto " aria-labelledby="dropdownMenuButton2">
+                <ul class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#"> <strong>Contact</strong>
+                    <li>
+                        <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="tel:561-403-8472">Phone</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="mailto:Zulma.jeff@yahoo.com">Email</a>
+                    </li> 
+                    <li>
+                        <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="https://www.linkedin.com/in/jeff-zulma-89676920a/">Linkedin</a>
+                    </li> 
+                    <li>
+                        <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 fa fa-github text-gray-700"  href="https://github.com/Cjmoney1234"> Github</a>
+                    </li> 
+                </ul>
+            </ul>
+        </div>
+        <!-- Right elements -->
+    </nav>
     </header>
     <!--Banner with picture and Occupation Title-->
     <section class="author-banner">
         <div class="my-img">
-            <img class="my-img" src="./assets/img-2882.jpg" alt="author-picture"/>
+            <img class="my-img" src="./assets/images/portfolio/img-2882.jpg" alt="author-picture"/>
             <h3 class="occupation">Bootcamp Student</h3>
         </div>
     </section>
@@ -42,11 +97,12 @@
                         <li class="project-list"><Strong>Portfolio</Strong></li>
                             <li class="project-explination">In this project we were asigned to create this wonderful page you are viewing.</li>
                         <li class="project-list"><Strong>Weather Dashboard</Strong></li>
-                            <li class="project-explination">In this assignment we were asigned to create a 5 day weather forecast.</li>
+                            <li class="project-explination">This project is a 5 day weather forecast. You can search any city that you wish to know the weather!</li>
                         <li class="project-list"><Strong>Foodie Central</Strong></li>
-                            <li class="project-explination">This is my first project completed, my team and I created an application that allows users to find local resturants in any city.</li>
+                            <li class="project-explination">This is the first project completed during my time in bootcamp, I was assigned Lead Front End Devekoper. My team and I created an application that allows the user to find local resturants in any city. <br>
+                                If you wish to add your favorite local resturant then you can submit using the modal.</li>
                         <li class="project-list"><Strong>Resume</Strong></li>
-                            <li class="project-explination">This is a personal project I took on, which was creating my resume accessible online. <span>See link above</span></li>
+                            <li class="project-explination">This is a personal project I took on. I want to make my resume accessible online. <a href="./assets/resume.html"><strong>Click Me!</strong></a></li>
                         <li class="project-list"><Strong>More coming soon!!</Strong></li>
                      </p>
                 </div>
@@ -67,23 +123,13 @@
                     </figure>
                 </div>
         </section>
-
-        <section class="page-section" id="contact">
-            <h2>Contact me</h2>
-                <div>
-                    <address>
-                        <a class="fa fa-github" href="https://github.com/Cjmoney1234"> Github</a>
-                        <i class='fa fa-linkedin-in '></i>
-                        <a href="https://www.linkedin.com/in/jeff-zulma-89676920a/"><Strong>linkedin</Strong></a>&nbsp &nbsp
-                        <a href="mailto:Zulma.jeff@yahoo.com"><Strong>📧Email</Strong></a>&nbsp &nbsp
-                    </address>
-                </div>
-        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     
 </body>
 
 <footer>
-    <p>Future Developer &#128187;</p>
+    <p>Future Frontend Developer &#128187;</p>
 </footer>
 </html>
