@@ -150,8 +150,14 @@ nav a:hover {
     font-size: 0.8rem;
 }
 
-div figure a {
-    background-image: url(./assets/Screenshot\ 2022-11-13\ 202828.png);
+#project1 {
+    background-image: url(./assets/Screenshot_20230106_075141.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+#weatherDashboard {
+    background-image: url(./assets/Screenshot_20230106_075740.png);
     object-fit: cover;
     background-repeat: no-repeat;
 }
