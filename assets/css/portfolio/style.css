@@ -153,6 +153,12 @@ nav div a img:hover {
     background-repeat: no-repeat;
 }
 
+#project2 {
+    background-image: url(../../images/portfolio/Screenshot\ 2023-03-08\ 220538.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
 #weatherDashboard {
     background-image: url(../../images/portfolio/Screenshot_20230106_075740.png);
     object-fit: cover;
